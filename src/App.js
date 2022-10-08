@@ -5,7 +5,11 @@ import Search from "./Components/Search/Search";
 
 function App() {
   const handleOnSearchChange = (searchData) => {
-    console.log(searchData);
+    const [lat, lon] = searchData.value.split(" ");
+
+    const currentWeatherFetch = fetch(
+      `/weather?lat={lat}&lon={lon}&appid={API key}`
+    );
   };
 
   return (
