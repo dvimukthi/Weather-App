@@ -1,4 +1,5 @@
 import React from "react";
+import { WEATHER_API_KEY, WEATHER_API_URL } from "./Api";
 import "./App.css";
 import CurrentWeather from "./Components/Current-Weather/CurrentWeather";
 import Search from "./Components/Search/Search";
@@ -8,7 +9,7 @@ function App() {
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = fetch(
-      `/weather?lat={lat}&lon={lon}&appid={API key}`
+      `${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`
     );
   };
 
