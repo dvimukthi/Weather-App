@@ -30,6 +30,14 @@
     margin: 0;
 }
 
-.weather-icon{
+.weather-icon {
     width: 100px;
+}
+
+.temperature{
+    font-weight: 600;
+    font-size: 70px;
+    width: auto;
+    line-height: -5;
+    margin: 0;
 }
